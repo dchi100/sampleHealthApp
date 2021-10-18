@@ -13,6 +13,7 @@
 		D573A8A5271E1AAE00AE90C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D573A8A3271E1AAE00AE90C7 /* Main.storyboard */; };
 		D573A8A7271E1AAF00AE90C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D573A8A6271E1AAF00AE90C7 /* Assets.xcassets */; };
 		D573A8AA271E1AAF00AE90C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D573A8A8271E1AAF00AE90C7 /* LaunchScreen.storyboard */; };
+		D573A8B2271E1DEF00AE90C7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D573A8B1271E1DEF00AE90C7 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D573A8A6271E1AAF00AE90C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D573A8A9271E1AAF00AE90C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D573A8AB271E1AAF00AE90C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D573A8B1271E1DEF00AE90C7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				D573A89F271E1AAE00AE90C7 /* SceneDelegate.swift */,
 				D573A8A1271E1AAE00AE90C7 /* ViewController.swift */,
 				D573A8A3271E1AAE00AE90C7 /* Main.storyboard */,
+				D573A8B1271E1DEF00AE90C7 /* Home.storyboard */,
 				D573A8A6271E1AAF00AE90C7 /* Assets.xcassets */,
 				D573A8A8271E1AAF00AE90C7 /* LaunchScreen.storyboard */,
 				D573A8AB271E1AAF00AE90C7 /* Info.plist */,
@@ -127,6 +130,7 @@
 				D573A8AA271E1AAF00AE90C7 /* LaunchScreen.storyboard in Resources */,
 				D573A8A7271E1AAF00AE90C7 /* Assets.xcassets in Resources */,
 				D573A8A5271E1AAE00AE90C7 /* Main.storyboard in Resources */,
+				D573A8B2271E1DEF00AE90C7 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
