@@ -7,13 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    @IBAction func click(_ sender: Any) {
+    }
+    @IBAction func getName(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
 

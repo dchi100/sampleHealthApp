@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Access to Health App information.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Sharing of Health App information.</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

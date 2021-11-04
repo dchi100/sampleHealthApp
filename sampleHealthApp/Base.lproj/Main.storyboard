@@ -29,6 +29,10 @@
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="getName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="BL6-gA-b3a"/>
+                                    <action selector="getName:" destination="BYZ-38-t0r" eventType="valueChanged" id="zXm-f3-fUe"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dw3-N2-B2f">
                                 <rect key="frame" x="82" y="497" width="250" height="34"/>
@@ -42,6 +46,9 @@
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="VP6-ys-V3J"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PV-1h-twX">
                                 <rect key="frame" x="248" y="564" width="86" height="35"/>
@@ -50,6 +57,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8TC-ga-kx0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skj-og-Ztk">
                                 <rect key="frame" x="101" y="290" width="212" height="30"/>

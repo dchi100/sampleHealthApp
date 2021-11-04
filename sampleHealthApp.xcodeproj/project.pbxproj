@@ -14,6 +14,10 @@
 		D573A8A7271E1AAF00AE90C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D573A8A6271E1AAF00AE90C7 /* Assets.xcassets */; };
 		D573A8AA271E1AAF00AE90C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D573A8A8271E1AAF00AE90C7 /* LaunchScreen.storyboard */; };
 		D573A8B2271E1DEF00AE90C7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D573A8B1271E1DEF00AE90C7 /* Home.storyboard */; };
+		D581746427335CF9003EF80A /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D581746327335CF9003EF80A /* HomeController.swift */; };
+		D581746827335DC2003EF80A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D581746727335DC2003EF80A /* HealthKit.framework */; };
+		D581746A27335FDA003EF80A /* Display.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D581746927335FDA003EF80A /* Display.storyboard */; };
+		D581746C27335FF6003EF80A /* DisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D581746B27335FF6003EF80A /* DisplayController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		D573A8A9271E1AAF00AE90C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D573A8AB271E1AAF00AE90C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D573A8B1271E1DEF00AE90C7 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D581746327335CF9003EF80A /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		D581746527335DC2003EF80A /* sampleHealthApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sampleHealthApp.entitlements; sourceTree = "<group>"; };
+		D581746727335DC2003EF80A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D581746927335FDA003EF80A /* Display.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Display.storyboard; sourceTree = "<group>"; };
+		D581746B27335FF6003EF80A /* DisplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D581746827335DC2003EF80A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +54,7 @@
 			children = (
 				D573A89C271E1AAE00AE90C7 /* sampleHealthApp */,
 				D573A89B271E1AAE00AE90C7 /* Products */,
+				D581746627335DC2003EF80A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +69,28 @@
 		D573A89C271E1AAE00AE90C7 /* sampleHealthApp */ = {
 			isa = PBXGroup;
 			children = (
+				D581746527335DC2003EF80A /* sampleHealthApp.entitlements */,
 				D573A89D271E1AAE00AE90C7 /* AppDelegate.swift */,
 				D573A89F271E1AAE00AE90C7 /* SceneDelegate.swift */,
 				D573A8A1271E1AAE00AE90C7 /* ViewController.swift */,
+				D581746327335CF9003EF80A /* HomeController.swift */,
+				D581746B27335FF6003EF80A /* DisplayController.swift */,
 				D573A8A3271E1AAE00AE90C7 /* Main.storyboard */,
 				D573A8B1271E1DEF00AE90C7 /* Home.storyboard */,
+				D581746927335FDA003EF80A /* Display.storyboard */,
 				D573A8A6271E1AAF00AE90C7 /* Assets.xcassets */,
 				D573A8A8271E1AAF00AE90C7 /* LaunchScreen.storyboard */,
 				D573A8AB271E1AAF00AE90C7 /* Info.plist */,
 			);
 			path = sampleHealthApp;
+			sourceTree = "<group>";
+		};
+		D581746627335DC2003EF80A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D581746727335DC2003EF80A /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D581746A27335FDA003EF80A /* Display.storyboard in Resources */,
 				D573A8AA271E1AAF00AE90C7 /* LaunchScreen.storyboard in Resources */,
 				D573A8A7271E1AAF00AE90C7 /* Assets.xcassets in Resources */,
 				D573A8A5271E1AAE00AE90C7 /* Main.storyboard in Resources */,
@@ -141,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D581746427335CF9003EF80A /* HomeController.swift in Sources */,
+				D581746C27335FF6003EF80A /* DisplayController.swift in Sources */,
 				D573A8A2271E1AAE00AE90C7 /* ViewController.swift in Sources */,
 				D573A89E271E1AAE00AE90C7 /* AppDelegate.swift in Sources */,
 				D573A8A0271E1AAE00AE90C7 /* SceneDelegate.swift in Sources */,
@@ -290,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sampleHealthApp/sampleHealthApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3K29Z6C7V;
 				INFOPLIST_FILE = sampleHealthApp/Info.plist;
@@ -309,6 +336,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sampleHealthApp/sampleHealthApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3K29Z6C7V;
 				INFOPLIST_FILE = sampleHealthApp/Info.plist;
