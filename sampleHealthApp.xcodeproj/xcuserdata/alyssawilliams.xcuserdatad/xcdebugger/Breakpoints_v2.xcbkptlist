@@ -7,32 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5598134A-18C7-41B8-B99E-AA74108DB779"
-            shouldBeEnabled = "No"
+            uuid = "9F4E755F-7AF3-4A9A-8146-4931538C9454"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sampleHealthApp/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "latestHeartRate()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "694C0D79-5782-46DC-8896-23579D5E35B4"
-            shouldBeEnabled = "No"
+            uuid = "18D9768B-F95D-4BBB-AABB-75D3FD81869B"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sampleHealthApp/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getTodaysSteps(completion:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "latestHeartRate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
