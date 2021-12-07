@@ -27,7 +27,8 @@ class ViewController: UIViewController {
                 // access step count
                 HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!,
                 //access heart rate
-                HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!
+                HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!,
+                HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
             ]
 
         healthStore.requestAuthorization(toShare: healthKitTypes, read: healthKitTypes) { (check, error) in
@@ -65,12 +66,48 @@ class ViewController: UIViewController {
         healthStore.execute(query)
     }
     
+    func getTodaysDistance(completion: @escaping (Double) -> Void) {
+        let distanceQuantityType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+        
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
+        
+        let query = HKStatisticsQuery(quantityType: distanceQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { (_, result, error) in
+            var resultCount = 0.0
+            guard let result = result else {
+                print("Failed to fetch distance traveled")
+                completion(resultCount)
+                return
+            }
+            if let sum = result.sumQuantity() {
+                resultCount = sum.doubleValue(for: HKUnit.mile())
+            }
+            
+            DispatchQueue.main.async {
+                completion(resultCount)
+            }
+        }
+        healthStore.execute(query)
+    }
+    
+    @IBOutlet weak var distanceRunning: UILabel!
     @IBOutlet weak var totalSteps: UILabel!
+    
     @IBAction func getTotalSteps(_ sender: Any) {
         getTodaysSteps { (result) in
             print("\(result)")
             DispatchQueue.main.async {
                 self.totalSteps.text = "\(result)"
+            }
+        }
+    }
+    
+    @IBAction func getDistanceRunWalk(_sender: Any){
+        getTodaysDistance {(result) in
+            print("\(result)")
+            DispatchQueue.main.async{
+                self.distanceRunning.text = "\(result)"
             }
         }
     }
